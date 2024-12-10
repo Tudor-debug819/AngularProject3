@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
+
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
+  imports: [NgFor]
 })
 export class ProjectsComponent {
   cards = [
@@ -24,6 +27,6 @@ export class ProjectsComponent {
       description: 'Description for project 3.',
       image: 'assets/project3.png',
       link: 'https://example.com/project3',
-    },
+    }
   ];
 }
