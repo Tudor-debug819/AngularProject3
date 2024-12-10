@@ -20,4 +20,14 @@
   <button>Download CV</button>
 </a>
 
-<div class="container" id="cards-container"></div>
+<div class="container" id="cards-container">
+  <div *ngFor="let card of cards" class="card">
+    <img [src]="card.image" alt="Project Image" />
+    <h3>{{ card.title }}</h3>
+    <p>{{ card.description }}</p>
+    <a [href]="card.link" target="_blank">
+      <img src="assets/icons8-link-24.png" alt="Link Icon" />
+      <p>View More</p>
+    </a>
+  </div>
+</div>
