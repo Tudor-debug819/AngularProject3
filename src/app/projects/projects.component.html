@@ -1,7 +1,7 @@
 <div class="introduction">
   <img
     id="poza-inceput"
-    src="imagini/PozaPortofoliu.jpeg"
+    src="assets/PozaPortofoliu.jpeg"
     width="200"
     height="200"
   />
@@ -25,7 +25,8 @@
     <img [src]="card.image" alt="Project Image" />
     <h3>{{ card.title }}</h3>
     <p>{{ card.description }}</p>
-      <img src="assets/back-to-top-photo.png" alt="Link Icon" />
-      <p>View More</p>
+    <p>Technologies used: <strong>{{card.technologies}}</strong></p>
+    <img [src]="card.githubLink"/>
+      
   </div>
 </div>
