@@ -26,6 +26,14 @@
     <h3>{{ card.title }}</h3>
     <p>{{ card.description }}</p>
     <p>Technologies used: <strong>{{card.technologies}}</strong></p>
+    <div class="links">
+      <a [href]="card.githubLink" target="_blank" aria-label="GitHub">
+        <img src="assets/icons8-github-24.png" alt="GitHub" />
+      </a>
+      <a [href]="card.liveLink" target="_blank" aria-label="Live Link">
+        <img src="assets/icons8-link-24.png" alt="Live Link" />
+      </a>
+    </div>
       
   </div>
 </div>
