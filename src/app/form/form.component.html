@@ -1,6 +1,7 @@
 <section class="contact-form">
     <h2>Contact Me</h2>
-    <form>
+    <div *ngIf="formSubmitted">Thank you for your message!</div>
+    <form (ngSubmit)="onSubmit()" *ngIf="!formSubmitted">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required />
       
